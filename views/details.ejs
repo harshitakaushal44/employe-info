@@ -1,0 +1,23 @@
+<%-include('header')%>
+
+
+<h2>employee id</h2>
+
+
+<div id="center">
+        <!-- <h5><%= data.id%></h5> -->
+      <h5><%= data.name%></h5>
+      <img src="<%= data.image%>" alt="book image">
+      <h5><%= data.email%></h5>
+      <h5><%= data.year%></h5>
+      <h5><%= data.designation%></h5>
+ 
+      <a href="/delete/<%= data._id%>">delete</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="/update/<%= data._id%>">update</a>
+      <hr>
+      
+    </div>
+
+
+<%-include("footer")%>

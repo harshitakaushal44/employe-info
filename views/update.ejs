@@ -1,0 +1,18 @@
+<%-include('header')%>
+<div id="page2">
+  <h1>upadte your data</h1>
+<div id="box">
+    <form action="/update/<%= data._id%>" method='post'>
+      <input value="<%= data._id%>" type="text" name="employee id" placeholder="employee id"> <br> <br>
+    <input value="<%= data.name%>" type="text" name="name" placeholder="employee name"><br> <br>
+    <input value="<%= data.image%>" type="url" name="image" placeholder="employee image"><br> <br>
+    <input value="<%= data.email%>" type="email" name="email" placeholder="employee email"><br> <br>
+    <input value="<%= data.year%>" type="number" name="year" placeholder="year of joining"><br> <br>
+    <input value="<%= data.designation%>" type="text" name="designation" placeholder="employee designation"><br><br>
+    
+    <button>Submit</button>
+  </form>
+</div>
+</div>
+
+<%-include("footer")%>

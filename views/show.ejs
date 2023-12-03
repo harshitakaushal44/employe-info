@@ -1,0 +1,25 @@
+<%-include('header')%>
+<div id="page3">
+<div id="cntnt">
+<h1>Employee Details</h1>
+<h2><a href="/">←back</a></h2>
+</div>
+<div id="bigbox">
+  <%data.forEach(function(data,index){%>
+    <div id="box2">
+    <h2><%= data.id%></h2><br><br>
+    <h2><%= data.name%></h2><br><br>
+    <img src="<%= data.image %>" alt=""><br><br>
+    <!-- <h5><%= data.email%></h5>
+      <h5><%= data.year%></h5>
+      <h5><%= data.designation%></h5>
+  -->
+
+ 
+ <a href="/details/<%= data._id%>">Explore more</a>
+</div>
+ <%})%>
+</div>
+</div>
+
+<%-include("footer")%>
